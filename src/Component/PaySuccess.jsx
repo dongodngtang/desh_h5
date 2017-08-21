@@ -1,9 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import {History, Link} from 'react-router';
-import {connect} from 'react-redux';
-import {is, fromJS} from 'immutable';
-import {Tool} from '../Config/Tool';
-import {Header, template} from './common/mixin';
+import {getRaceList} from '../Config/RaceDao';
 
 
 export default class PaySuccess extends Component {
@@ -12,12 +8,20 @@ export default class PaySuccess extends Component {
     render() {
         return (<div className="component_container index_module">
 
-            {this.postInform()}
 
         </div>)
     }
 
+
+    componentDidMount() {
+        this.postInform()
+    }
+
     postInform = () => {
-        console.log('lajsldkjflasdkjf')
+        getRaceList(data => {
+            console.log(data)
+        }, err => {
+            console.log(err)
+        })
     }
 }

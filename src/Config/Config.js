@@ -33,7 +33,7 @@ const system = (() => {
   }
   return system
 })()
-const target = process.env.NODE_ENV !== 'production' ? '' : 'http://cangdu.org'; //目标网站
+const target = process.env.NODE_ENV !== 'production' ? 'http://106.75.134.18:8800/v10/' : 'https://api.deshpro.com/v10/'; //目标网站
 export {
   target,
   system
