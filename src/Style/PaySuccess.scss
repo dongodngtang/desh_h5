@@ -1,0 +1,28 @@
+.index_module {
+  padding-top: 2.2rem;
+}
+
+.index_tip {
+  padding: 0.7rem 0 0.5rem 0;
+  font-size: 0.7rem;
+  .tip_text {
+    display: inline-block;
+    padding-left: 0.75rem;
+    font-size: 0.7rem;
+    color: #985ec9;
+    padding-right: 0.55rem;
+    background: url(../images/star.png) no-repeat center right;
+    background-size: 0.35rem 0.35rem;
+  }
+
+  .submit {
+    margin: 0 0.75rem 0;
+    height: 2.45rem;
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.45rem;
+    background-color: #985ec9;
+    border-radius: 0.25rem;
+  }
+}
